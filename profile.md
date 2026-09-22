@@ -20,10 +20,10 @@ Fill in once. Vera uses it to work out your daily target.
 |---|---|
 | BMR (Mifflin-St Jeor) | 1,485 kcal (at 195 lb) |
 | Maintenance (TDEE, before logged exercise) | 1,780 kcal |
-| Daily calorie target | 1,280 kcal net (eaten minus logged exercise) |
-| Planned deficit / expected loss per week | 500 kcal/day, about 1 lb/week |
-| Protein goal | about 90 g/day |
-| Next recalculation | at 190 lb |
+| Daily calorie target | 1,799 kcal (set by coach, 2026-09-22; replaces Vera's 1,280) |
+| Planned deficit / expected loss per week | Food alone is near maintenance (est. 1,780); deficit comes from exercise |
+| Protein goal | 137 g/day (set by coach) |
+| Next recalculation | Coach owns targets. Vera still updates BMR/maintenance at 190 lb for reference |
 
 ## Habits
 
