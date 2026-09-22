@@ -24,3 +24,8 @@ Fill in once. Vera uses it to work out your daily target.
 | Planned deficit / expected loss per week | 500 kcal/day, about 1 lb/week |
 | Protein goal | about 90 g/day |
 | Next recalculation | at 190 lb |
+
+## Habits
+
+- Coconut milk: carton (unsweetened beverage), not canned.
+- Fish and meat: weighed cooked, without bones.
