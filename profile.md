@@ -29,3 +29,4 @@ Fill in once. Vera uses it to work out your daily target.
 
 - Coconut milk: carton (unsweetened beverage), not canned.
 - Fish and meat: weighed cooked, without bones.
+- Exercise calories are NOT added back: 1,799 is a daily cap (default chosen 2026-09-22; owner to confirm with coach).
