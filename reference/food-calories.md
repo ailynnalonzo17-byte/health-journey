@@ -53,3 +53,10 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Dark chocolate 70–85% | | 598 | 7.8 | |
 | Sugar | | 387 | 0 | |
 | Honey | | 304 | 0.3 | |
+| Premier Protein shake, 11 oz | per bottle | 160 per bottle | 30 per bottle | label |
+| Milkfish (bangus) | cooked | 190 | 26 | |
+| Milkfish (bangus) | raw | 148 | 20.5 | |
+| Broccoli | cooked | 35 | 2.4 | |
+| Bok choy | cooked | 12 | 1.6 | |
+| Coconut milk beverage, unsweetened (carton) | | 19 | 0.2 | est |
+| Coconut milk, canned | | 230 | 2.3 | |
