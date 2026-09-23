@@ -30,3 +30,4 @@ Fill in once. Vera uses it to work out your daily target.
 - Coconut milk: carton (unsweetened beverage), not canned.
 - Fish and meat: weighed cooked, without bones.
 - Exercise calories are NOT added back: 1,799 is a daily limit (confirmed by coach, 2026-09-22).
+- Electrolyte drink: no sugar, 0 kcal.
