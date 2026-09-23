@@ -27,3 +27,4 @@
 | Housework, general cleaning | 3.3 |
 | Gardening | 3.8 |
 | Steps only (no activity named) | ~0.04 kcal per step per 70 kg, scaled by weight |
+| Kickboxing class, moderate | 7.3 |
