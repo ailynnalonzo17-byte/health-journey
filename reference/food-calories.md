@@ -60,3 +60,5 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Bok choy | cooked | 12 | 1.6 | |
 | Coconut milk beverage, unsweetened (carton) | | 19 | 0.2 | est |
 | Coconut milk, canned | | 230 | 2.3 | |
+| Beef bulgogi | cooked | 200 | 20 | est, marinade varies |
+| Japchae | prepared | 150 | 3 | est, recipe varies |
