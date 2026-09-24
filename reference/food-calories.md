@@ -62,3 +62,9 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Coconut milk, canned | | 230 | 2.3 | |
 | Beef bulgogi | cooked | 200 | 20 | est, marinade varies |
 | Japchae | prepared | 150 | 3 | est, recipe varies |
+| Iceberg lettuce | raw | 14 | 0.9 | |
+| Croutons, seasoned | | 465 | 10.8 | est |
+| Blue cheese | | 353 | 21.4 | |
+| Blue cheese dressing | | 484 | 1.4 | est, brand varies |
+| Broccolini | cooked | 35 | 3 | est |
+| Red onion | raw | 40 | 1.1 | |
