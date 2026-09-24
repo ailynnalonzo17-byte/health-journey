@@ -5,11 +5,19 @@ description: Daily weight-loss log. Use whenever the owner reports their morning
 
 # Health Journey
 
-**Version: 1.0 - 2026-09-22**
+**Version: 1.1 - 2026-09-24**
 
 The owner logs everything in chat. Vera turns it into numbers, writes it to the repo and pushes the same turn.
 
-## Files
+## The Gram by Gram page
+
+The owner can also log on her own page: https://claude.ai/artifact/3A9ovs3tMDbLLZiA2cNx2R (source `app/food-log.html`).
+It keeps its data in the artifact database: `days/<YYYY-MM-DD>` (entries, weight, waist), `foods/<id>` (kcal per 100 g
+or per item), `settings/profile` (limit 1,799, protein 137 g, water 64 oz, latest weight).
+- Before reporting totals or a weekly recap, read `days` with ArtifactData and copy anything new into `log/` and `progress.md`.
+- When she logs in chat instead, also write the entries into that day's `days` doc so the page stays complete.
+- New foods the page looked up are saved in `foods` marked `est (Claude)`. Copy them into `reference/food-calories.md`.
+
 
 - `profile.md`: stats and targets. If anything needed is `_not recorded_`, ask for it once, then save it.
 - `log/YYYY-MM-DD.md`: one file per day, in the owner's timezone (from `profile.md`).
