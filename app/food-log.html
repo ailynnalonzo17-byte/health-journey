@@ -143,15 +143,15 @@ textarea{width:100%;min-height:92px;resize:vertical;border:1px solid var(--line)
       <button class="chip" data-meal="Dinner">Dinner</button>
       <button class="chip" data-meal="Snack">Snack</button>
     </div>
-    <label for="input" class="hint">One item per line or separated by commas. Weigh food in grams.</label>
+    <label for="input" class="hint">One item per line or separated by commas. Weigh food in grams. Nothing counts until you tap Add.</label>
     <textarea id="input" placeholder="165g milkfish, 38g broccoli, 98g banana
 1 premier protein
 32 oz water
 45 min kickboxing"></textarea>
     <div class="row">
-      <button class="primary" id="check">Calculate</button>
-      <button class="primary" id="add" hidden>Add to day</button>
+      <button class="primary" id="add" disabled>Add to today</button>
       <button class="ghost" id="clear" hidden>Clear</button>
+      <span class="hint" id="added" role="status"></span>
     </div>
     <div class="preview" id="preview"></div>
     <div class="note" id="note" hidden></div>
@@ -229,6 +229,9 @@ function matchFood(q){
   }
   return bestScore>=0.55?best:null;
 }
+function hitFrac(q,f){ const qt=norm(q).split(" ").filter(t=>t&&!STOP.has(t)); if(!qt.length) return 0;
+  const nt=[f.name,...(f.aliases||[])].flatMap(n=>norm(n).split(" ")); return qt.filter(t=>nt.some(x=>tokEq(t,x))).length/qt.length;
+}
 function foodLabel(f){ return f.state?`${f.name} (${f.state})`:f.name; }
 
 function parsePiece(raw){
@@ -275,7 +278,8 @@ function resolve(p){
     const kg=bodyWeightLb()*0.45359237, burned=Math.round(met*kg*p.minutes/60);
     return {...p, ok:true, name:nice, met, burned, label:`${nice} · ${p.minutes} min · MET ${met}`};
   }
-  const hit=matchFood(p.name);
+  let hit=matchFood(p.name);
+  if(hit&&hitFrac(p.name,hit.f)<0.5) hit=null;
   if(!hit) return {...p, ok:false, reason:"Not in your food list yet"};
   const f=hit.f;
   if(p.grams!=null){
@@ -317,13 +321,23 @@ Return JSON only: {"foods":[{"query":"...","name":"short food name","state":"coo
   }
 }
 
-async function calculate(){
-  const text=$("input").value; const pieces=text.split(/[\n,;]+/).map(parsePiece).filter(Boolean);
-  if(!pieces.length){ renderPreview([]); return; }
-  $("check").disabled=true;
+function parseAll(){ return $("input").value.split(/[\n,;]+/).map(parsePiece).filter(Boolean); }
+let liveTimer=0;
+function livePreview(){ clearTimeout(liveTimer); liveTimer=setTimeout(()=>{ const items=parseAll().map(resolve); state.pending=items; renderPreview(items); },250); }
+
+async function addAll(){
+  const pieces=parseAll(); if(!pieces.length) return;
+  $("add").disabled=true; $("add").textContent="Adding…";
   let items=pieces.map(resolve);
   if(items.some(i=>!i.ok)){ if(await lookupUnknown(items)) items=items.map(i=>i.ok?i:resolve(i)); }
-  state.pending=items; $("check").disabled=false; renderPreview(items);
+  state.pending=items.filter(i=>i.ok);
+  const kcal=state.pending.reduce((a,i)=>a+(i.kcal||0),0), n=state.pending.length;
+  const left=items.filter(i=>!i.ok);
+  if(n) await addPending();
+  $("input").value=left.map(i=>i.text).join("\n");
+  state.pending=left; renderPreview(left);
+  $("added").textContent=n?`Added ${n} to ${prettyDate(state.date).toLowerCase()} · ${fmt(kcal)} kcal`:"";
+  if(left.length){ $("note").hidden=false; $("note").textContent=`${left.length} item${left.length>1?"s":""} not added. Fix the line below or tell Vera.`; }
 }
 
 function renderPreview(items){
@@ -332,7 +346,7 @@ function renderPreview(items){
   for(const it of items){
     const d=document.createElement("div"); d.className="pv"+(it.ok?"":" bad");
     const a=document.createElement("div"); const b=document.createElement("div"); b.className="k num";
-    if(!it.ok){ a.textContent=it.text; const m=document.createElement("div"); m.className="m"; m.textContent=it.reason; a.append(m); b.textContent="?"; }
+    if(!it.ok){ a.textContent=it.text; const m=document.createElement("div"); m.className="m"; m.textContent=it.reason==="Not in your food list yet"?"New food. Claude looks it up when you tap Add.":it.reason; a.append(m); b.textContent="?"; }
     else{
       a.textContent=it.label;
       if(it.kind==="food"){ kcal+=it.kcal; prot+=it.protein; b.textContent=`${fmt(it.kcal)} kcal`; const m=document.createElement("div"); m.className="m"; m.textContent=`${it.protein} g protein${it.est?" · estimate":""}`; a.append(m); }
@@ -342,9 +356,9 @@ function renderPreview(items){
     }
     d.append(a,b); box.append(d);
   }
-  const good=items.filter(i=>i.ok).length;
-  $("add").hidden=!good; $("clear").hidden=!items.length;
-  $("add").textContent=good?`Add ${good} to ${state.meal.toLowerCase()} · ${fmt(kcal)} kcal`:"Add to day";
+  const good=items.filter(i=>i.ok).length, bad=items.length-good;
+  $("add").disabled=!items.length; $("clear").hidden=!items.length;
+  $("add").textContent=items.length?`Add to ${state.meal.toLowerCase()} · ${fmt(kcal)} kcal${bad?` + ${bad} to look up`:""}`:`Add to ${prettyDate(state.date).toLowerCase()}`;
 }
 
 // ---- saving (one write at a time per day doc) ----
@@ -371,7 +385,7 @@ async function addPending(){
     d.entries.push(e);
   }
   state.days[state.date]={...d};
-  $("input").value=""; state.pending=[]; renderPreview([]); render(); saveDay(state.date);
+  state.pending=[]; render(); saveDay(state.date);
 }
 async function saveProfileWeight(w){
   state.profile={...state.profile, weightLb:w};
@@ -454,11 +468,10 @@ function renderWeek(){
 // ---- wiring ----
 function setMeal(m){ state.meal=m; for(const b of $("meals").querySelectorAll(".chip")) b.setAttribute("aria-pressed",String(b.dataset.meal===m)); if(state.pending.length) renderPreview(state.pending); }
 $("meals").addEventListener("click",e=>{ const b=e.target.closest(".chip"); if(b) setMeal(b.dataset.meal); });
-$("check").addEventListener("click",calculate);
-$("add").addEventListener("click",addPending);
-$("clear").addEventListener("click",()=>{ $("input").value=""; state.pending=[]; renderPreview([]); $("note").hidden=true; });
-$("input").addEventListener("keydown",e=>{ if(e.key==="Enter"&&(e.metaKey||e.ctrlKey)){ e.preventDefault(); calculate(); } });
-$("input").addEventListener("input",()=>{ if(state.pending.length){ state.pending=[]; renderPreview([]); } });
+$("add").addEventListener("click",addAll);
+$("clear").addEventListener("click",()=>{ $("input").value=""; state.pending=[]; renderPreview([]); $("note").hidden=true; $("added").textContent=""; });
+$("input").addEventListener("keydown",e=>{ if(e.key==="Enter"&&(e.metaKey||e.ctrlKey)){ e.preventDefault(); addAll(); } });
+$("input").addEventListener("input",()=>{ $("added").textContent=""; $("note").hidden=true; livePreview(); });
 $("prev").addEventListener("click",()=>{ state.date=shift(state.date,-1); render(); });
 $("next").addEventListener("click",()=>{ if(state.date<todayStr()){ state.date=shift(state.date,1); render(); } });
 $("saveBody").addEventListener("click",async()=>{
@@ -467,7 +480,7 @@ $("saveBody").addEventListener("click",async()=>{
   state.days[state.date]=nd; if(!isNaN(w)&&state.date===todayStr()) await saveProfileWeight(w);
   render(); await saveDay(state.date); $("bodyMsg").textContent="Saved";
 });
-setMeal(state.meal); render();
+setMeal(state.meal); render(); if($("input").value.trim()) livePreview();
 
 // ---- connect ----
 (async()=>{
@@ -478,7 +491,7 @@ setMeal(state.meal); render();
   if(!db){ setStatus("Saving is off in this view. Entries will disappear when you close the page."); return; }
   state.db=db; setStatus("Synced");
   db.doc("settings/profile").onSnapshot(s=>{ if(s.exists){ state.profile={...DEFAULTS,...s.data()}; render(); } },()=>{});
-  db.collection("foods").onSnapshot(s=>{ const f={}; for(const d of s.docs) f[d.id]=d.data(); state.foods=f; if(state.pending.length) renderPreview(state.pending); },()=>{});
+  db.collection("foods").onSnapshot(s=>{ const f={}; for(const d of s.docs) f[d.id]=d.data(); state.foods=f; if($("input").value.trim()) livePreview(); },()=>{});
   db.collection("days").onSnapshot(s=>{ const m={}; for(const d of s.docs) m[d.id]=d.data(); state.days=m; render(); },
     e=>setStatus("Lost connection to your log. Reload the page."));
 })();

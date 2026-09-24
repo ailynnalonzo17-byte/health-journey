@@ -68,3 +68,4 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Blue cheese dressing | | 484 | 1.4 | est, brand varies |
 | Broccolini | cooked | 35 | 3 | est |
 | Red onion | raw | 40 | 1.1 | |
+| Light + Fit Greek yogurt, strawberry cheesecake | | 53 | 8 | label: 5.3 oz (150 g) cup = 80 kcal, 12 g protein |
