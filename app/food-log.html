@@ -375,7 +375,8 @@ function saveDay(date){
 function dayDoc(date){ return state.days[date]||(state.days[date]={date,entries:[]}); }
 
 async function addPending(){
-  const d=dayDoc(state.date); d.entries=[...(d.entries||[])];
+  // snapshot data is frozen: always build a fresh copy before editing
+  const cur=dayDoc(state.date); const d={...cur, entries:[...(cur.entries||[])]};
   for(const it of state.pending.filter(i=>i.ok)){
     if(it.kind==="weight"){ d.weight=it.value; await saveProfileWeight(it.value); continue; }
     const e={id:uid(), kind:it.kind, meal:it.kind==="food"?state.meal:null, text:it.text, at:new Date().toISOString()};
