@@ -30,3 +30,10 @@ Hamstring stretch, chest stretch at a doorway, child's pose. 30 to 45 s each.
 - No crunches or sit-ups for now. Dead bugs work the deep core without pushing the belly out (safer if there is any muscle separation).
 - Sharp or joint pain means stop that move. Muscle burn is fine.
 - Log it as "20 min strength" (about 100 kcal at her weight).
+
+## How-to videos (YouTube searches)
+- Chair squat: https://www.youtube.com/results?search_query=chair+squat+for+beginners+how+to
+- Counter push-up: https://www.youtube.com/results?search_query=counter+push+up+for+beginners
+- Glute bridge: https://www.youtube.com/results?search_query=glute+bridge+proper+form+beginners
+- Bent-over row: https://www.youtube.com/results?search_query=dumbbell+bent+over+row+form+beginners
+- Dead bug: https://www.youtube.com/results?search_query=dead+bug+exercise+for+beginners
