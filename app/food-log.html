@@ -220,7 +220,8 @@ function matchFood(q){
       const hit=qt.filter(t=>nt.some(x=>tokEq(t,x))).length;
       const cover=nt.filter(t=>qt.some(x=>tokEq(t,x))).length;
       if(!hit) continue;
-      let score=hit/qt.length*0.6 + cover/nt.length*0.4;
+      const exact=qt.filter(t=>nt.includes(t)).length;
+      let score=hit/qt.length*0.6 + cover/nt.length*0.4 + exact*0.001;
       const st=(f.state||"").toLowerCase();
       if(wantRaw) score+= st==="raw"?.15:0; else if(wantDry) score+= st==="dry"?.15:0;
       else score+= (st==="raw"||st==="dry")?-.05:(st==="cooked"||st==="baked"?.03:0);
@@ -287,19 +288,20 @@ function resolve(p){
     return {...p, ok:true, foodId:hit.id, food:foodLabel(f), kcal:Math.round(p.grams*f.kcal100/100), protein:Math.round(p.grams*(f.prot100||0)/10)/10, est:/est/.test(f.source||""), label:`${foodLabel(f)} · ${p.grams} g`};
   }
   if(f.kcalEach!=null) return {...p, ok:true, foodId:hit.id, food:foodLabel(f), kcal:Math.round(p.count*f.kcalEach), protein:Math.round(p.count*(f.protEach||0)*10)/10, label:`${foodLabel(f)} · ${p.count} ${f.eachLabel||"item"}`};
-  return {...p, ok:false, reason:`Add the grams, like "100g ${p.name}"`};
+  if(f.servingG){ const g=Math.round(p.count*f.servingG); return {...p, ok:true, foodId:hit.id, food:foodLabel(f), grams:g, kcal:Math.round(g*f.kcal100/100), protein:Math.round(g*(f.prot100||0)/10)/10, est:true, label:`${foodLabel(f)} · ${p.count} ${f.servingLabel||"serving"} (~${g} g)`}; }
+  return {...p, ok:false, reason:"Needs a serving size"};
 }
 
 async function lookupUnknown(items){
   if(!state.sample) return false;
-  const foods=items.filter(i=>!i.ok&&i.kind==="food"&&i.reason==="Not in your food list yet");
+  const foods=items.filter(i=>!i.ok&&i.kind==="food"&&(i.reason==="Not in your food list yet"||i.reason==="Needs a serving size"));
   const acts=items.filter(i=>!i.ok&&i.kind==="activity");
   if(!foods.length&&!acts.length) return false;
   const prompt=`You are a nutrition database. Give standard USDA-style values.
 Foods: ${JSON.stringify(foods.map(f=>f.name))}
 Activities: ${JSON.stringify(acts.map(a=>a.name))}
-Rules: assume the food was weighed as eaten (cooked if it is normally cooked; fish and meat cooked without bones). For branded single-serve items (a bottle, bar, packet) give per-item values instead of per 100 g.
-Return JSON only: {"foods":[{"query":"...","name":"short food name","state":"cooked|raw|dry|\"\"","kcal100":number|null,"prot100":number|null,"kcalEach":number|null,"protEach":number|null,"eachLabel":"bottle|bar|...|null"}],"activities":[{"query":"...","name":"...","met":number}]}`;
+Rules: when the query names a portion with no grams (bowl, plate, cup, slice, piece, serving), also give servingG, the typical weight in grams of ONE such portion, and servingLabel (the portion word). Assume the food was weighed as eaten (cooked if it is normally cooked; fish and meat cooked without bones). For branded single-serve items (a bottle, bar, packet) give per-item values instead of per 100 g.
+Return JSON only: {"foods":[{"query":"...","name":"short food name","state":"cooked|raw|dry|\"\"","kcal100":number|null,"prot100":number|null,"kcalEach":number|null,"protEach":number|null,"eachLabel":"bottle|bar|...|null","servingG":number|null,"servingLabel":"bowl|cup|...|null"}],"activities":[{"query":"...","name":"...","met":number}]}`;
   $("note").hidden=false; $("note").textContent="Looking up new items with Claude…";
   try{
     const r=await state.sample.json(prompt,{modelTier:"quick"});
@@ -308,7 +310,9 @@ Return JSON only: {"foods":[{"query":"...","name":"short food name","state":"coo
       const doc={name:f.name,state:f.state||"",aliases:[f.query].filter(Boolean),source:"est (Claude)"};
       if(f.kcal100!=null){ doc.kcal100=+f.kcal100; doc.prot100=+(f.prot100||0); }
       if(f.kcalEach!=null){ doc.kcalEach=+f.kcalEach; doc.protEach=+(f.protEach||0); doc.eachLabel=f.eachLabel||"item"; }
+      if(f.servingG!=null){ doc.servingG=+f.servingG; doc.servingLabel=f.servingLabel||"serving"; }
       if(doc.kcal100==null&&doc.kcalEach==null) continue;
+      const old=state.foods[id]; if(old&&old.aliases) doc.aliases=[...new Set([...old.aliases,...doc.aliases])];
       state.foods[id]=doc;
       if(state.db){ try{ await state.db.collection("foods").doc(id).set(doc); }catch(e){} }
     }
@@ -346,7 +350,7 @@ function renderPreview(items){
   for(const it of items){
     const d=document.createElement("div"); d.className="pv"+(it.ok?"":" bad");
     const a=document.createElement("div"); const b=document.createElement("div"); b.className="k num";
-    if(!it.ok){ a.textContent=it.text; const m=document.createElement("div"); m.className="m"; m.textContent=it.reason==="Not in your food list yet"?"New food. Claude looks it up when you tap Add.":it.reason; a.append(m); b.textContent="?"; }
+    if(!it.ok){ a.textContent=it.text; const m=document.createElement("div"); m.className="m"; m.textContent=it.reason==="Not in your food list yet"?"New food. Claude looks it up when you tap Add.":it.reason==="Needs a serving size"?"No grams given. Claude estimates the portion when you tap Add.":it.reason; a.append(m); b.textContent="?"; }
     else{
       a.textContent=it.label;
       if(it.kind==="food"){ kcal+=it.kcal; prot+=it.protein; b.textContent=`${fmt(it.kcal)} kcal`; const m=document.createElement("div"); m.className="m"; m.textContent=`${it.protein} g protein${it.est?" · estimate":""}`; a.append(m); }

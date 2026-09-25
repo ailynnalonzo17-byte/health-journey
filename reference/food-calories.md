@@ -69,3 +69,5 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Broccolini | cooked | 35 | 3 | est |
 | Red onion | raw | 40 | 1.1 | |
 | Light + Fit Greek yogurt, strawberry cheesecake | | 53 | 8 | label: 5.3 oz (150 g) cup = 80 kcal, 12 g protein |
+| Fettuccine Alfredo with chicken and mushroom | cooked | 220 | 14 | est (Claude) |
+| Garden salad with croutons and blue cheese dressing | | 145 | 5 | est (Claude), 1 bowl ≈ 200 g |
