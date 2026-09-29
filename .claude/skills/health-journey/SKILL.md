@@ -17,6 +17,7 @@ or per item), `settings/profile` (limit 1,799, protein 137 g, water 64 oz, lates
 - Before reporting totals or a weekly recap, read `days` with ArtifactData and copy anything new into `log/` and `progress.md`.
 - When she logs in chat instead, also write the entries into that day's `days` doc so the page stays complete.
 - Page code: db snapshot data is frozen. Always copy a day doc before editing it (a direct edit fails silently and nothing saves).
+- Claude lookups must never overwrite a known food; they only add aliases and portion sizes (`servings` map: cup, slice, spoonful...). Check new lookups for silly portion weights.
 - New foods the page looked up are saved in `foods` marked `est (Claude)`. Copy them into `reference/food-calories.md`.
 
 

@@ -206,7 +206,7 @@ function norm(s){ return s.toLowerCase().replace(/[^a-z0-9 ]+/g," ").replace(/\s
 function lev(a,b){ if(a===b) return 0; const m=a.length,n=b.length; if(Math.abs(m-n)>2) return 9;
   let p=Array.from({length:n+1},(_,i)=>i); for(let i=1;i<=m;i++){ const c=[i]; for(let j=1;j<=n;j++) c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]===b[j-1]?0:1)); p=c; } return p[n]; }
 function tokEq(a,b){ if(a===b) return true; if(a.length>=5&&b.length>=5) return lev(a,b)<=2; if(a.length>=4&&b.length>=4) return lev(a,b)<=1; return a.replace(/s$/,"")===b.replace(/s$/,""); }
-const STOP=new Set(["of","with","and","the","a","small","large","medium","slice","slices","sliced","piece","pieces","fresh","plain"]);
+const STOP=new Set(["of","with","and","the","a","small","large","medium","slice","slices","sliced","piece","pieces","fresh","plain","pc","pcs","cup","cups","bowl","bowls","plate","plates","spoon","spoons","spoonful","spoonfuls","tbsp","tsp","tablespoon","tablespoons","teaspoon","teaspoons","scoop","scoops","serving","servings"]);
 
 function matchFood(q){
   const qt=norm(q).split(" ").filter(t=>t&&!STOP.has(t));
@@ -259,8 +259,11 @@ function parsePiece(raw){
   if(m) return {kind:"food", grams:+m[1], name:m[2].trim(), text:s};
   m=low.match(/^(.+?)\s+(\d+(?:\.\d+)?)\s*(?:g|gm|gms|gns|gr|grams?)\b\.?$/);
   if(m) return {kind:"food", grams:+m[2], name:m[1].trim(), text:s};
-  // count: "1 premier protein", "2 eggs"
-  m=low.match(/^(\d+(?:\.\d+)?)\s+(.+)$/);
+  // trailing bare number: small = count ("banana 2"), large = grams ("broccolini 164")
+  m=low.match(/^(.+?)\s+(\d+(?:\.\d+)?)$/);
+  if(m) return +m[2]<=12?{kind:"food", count:+m[2], name:m[1].trim(), text:s}:{kind:"food", grams:+m[2], name:m[1].trim(), text:s};
+  // count: "1 premier protein", "2 eggs", "3pcs tacos"
+  m=low.match(/^(\d+(?:\.\d+)?)\s*(?:pcs?\b\.?|pieces?\b)?\s*(?:of\s+)?([a-z].*)$/);
   if(m) return {kind:"food", count:+m[1], name:m[2].trim(), text:s};
   return {kind:"food", count:1, name:low, text:s};
 }
@@ -287,10 +290,15 @@ function resolve(p){
     if(f.kcal100==null) return {...p, ok:false, reason:`${f.name} is counted per ${f.eachLabel||"item"}. Try "1 ${p.name}".`};
     return {...p, ok:true, foodId:hit.id, food:foodLabel(f), kcal:Math.round(p.grams*f.kcal100/100), protein:Math.round(p.grams*(f.prot100||0)/10)/10, est:/est/.test(f.source||""), label:`${foodLabel(f)} · ${p.grams} g`};
   }
-  if(f.kcalEach!=null) return {...p, ok:true, foodId:hit.id, food:foodLabel(f), kcal:Math.round(p.count*f.kcalEach), protein:Math.round(p.count*(f.protEach||0)*10)/10, label:`${foodLabel(f)} · ${p.count} ${f.eachLabel||"item"}`};
-  if(f.servingG){ const g=Math.round(p.count*f.servingG); return {...p, ok:true, foodId:hit.id, food:foodLabel(f), grams:g, kcal:Math.round(g*f.kcal100/100), protein:Math.round(g*(f.prot100||0)/10)/10, est:true, label:`${foodLabel(f)} · ${p.count} ${f.servingLabel||"serving"} (~${g} g)`}; }
-  return {...p, ok:false, reason:"Needs a serving size"};
+  const unit=portionOf(p.name), servings=servingsOf(f);
+  if(unit&&unit!=="piece"&&servings[unit]){ const g=Math.round(p.count*servings[unit]); return {...p, ok:true, foodId:hit.id, food:foodLabel(f), grams:g, kcal:Math.round(g*(f.kcal100||0)/100), protein:Math.round(g*(f.prot100||0)/10)/10, est:true, label:`${foodLabel(f)} · ${p.count} ${unit} (~${g} g)`}; }
+  if(f.kcalEach!=null&&(!unit||unit==="piece"||unit===f.eachLabel)) return {...p, ok:true, foodId:hit.id, food:foodLabel(f), kcal:Math.round(p.count*f.kcalEach), protein:Math.round(p.count*(f.protEach||0)*10)/10, label:`${foodLabel(f)} · ${p.count} ${f.eachLabel||"item"}`};
+  if(!unit&&servings.serving){ const g=Math.round(p.count*servings.serving); return {...p, ok:true, foodId:hit.id, food:foodLabel(f), grams:g, kcal:Math.round(g*(f.kcal100||0)/100), protein:Math.round(g*(f.prot100||0)/10)/10, est:true, label:`${foodLabel(f)} · ${p.count} serving (~${g} g)`}; }
+  return {...p, ok:false, reason:"Needs a serving size", unit, foodId:hit.id};
 }
+const PORTIONS=[["cup",/\bcups?\b/],["bowl",/\bbowls?\b/],["plate",/\bplates?\b/],["slice",/\bslices?\b/],["tbsp",/\b(tbsp|tablespoons?)\b/],["tsp",/\b(tsp|teaspoons?)\b/],["spoonful",/\bspoon(ful)?s?\b|\bspoonfuls\b/],["scoop",/\bscoops?\b/],["serving",/\bservings?\b/],["piece",/\b(pcs?|pieces?)\b/]];
+function portionOf(name){ for(const [u,re] of PORTIONS) if(re.test(name)) return u; return null; }
+function servingsOf(f){ const s={...(f.servings||{})}; if(f.servingG&&f.servingLabel){ const u=portionOf(f.servingLabel)||"serving"; if(!s[u]) s[u]=f.servingG; } return s; }
 
 async function lookupUnknown(items){
   if(!state.sample) return false;
@@ -300,7 +308,7 @@ async function lookupUnknown(items){
   const prompt=`You are a nutrition database. Give standard USDA-style values.
 Foods: ${JSON.stringify(foods.map(f=>f.name))}
 Activities: ${JSON.stringify(acts.map(a=>a.name))}
-Rules: when the query names a portion with no grams (bowl, plate, cup, slice, piece, serving), also give servingG, the typical weight in grams of ONE such portion, and servingLabel (the portion word). Assume the food was weighed as eaten (cooked if it is normally cooked; fish and meat cooked without bones). For branded single-serve items (a bottle, bar, packet) give per-item values instead of per 100 g.
+Rules: when the query names a portion with no grams (bowl, plate, cup, slice, spoonful, tbsp, scoop, serving), give servingG = the typical weight in grams of exactly ONE such portion of that food (1 cup cooked rice is about 195 g; 1 slice cucumber about 7 g), and servingLabel = that portion word. Assume the food was weighed as eaten (cooked if it is normally cooked; fish and meat cooked without bones). For branded single-serve items (a bottle, bar, packet) give per-item values instead of per 100 g.
 Return JSON only: {"foods":[{"query":"...","name":"short food name","state":"cooked|raw|dry|\"\"","kcal100":number|null,"prot100":number|null,"kcalEach":number|null,"protEach":number|null,"eachLabel":"bottle|bar|...|null","servingG":number|null,"servingLabel":"bowl|cup|...|null"}],"activities":[{"query":"...","name":"...","met":number}]}`;
   $("note").hidden=false; $("note").textContent="Looking up new items with Claude…";
   try{
@@ -312,7 +320,18 @@ Return JSON only: {"foods":[{"query":"...","name":"short food name","state":"coo
       if(f.kcalEach!=null){ doc.kcalEach=+f.kcalEach; doc.protEach=+(f.protEach||0); doc.eachLabel=f.eachLabel||"item"; }
       if(f.servingG!=null){ doc.servingG=+f.servingG; doc.servingLabel=f.servingLabel||"serving"; }
       if(doc.kcal100==null&&doc.kcalEach==null) continue;
-      const old=state.foods[id]; if(old&&old.aliases) doc.aliases=[...new Set([...old.aliases,...doc.aliases])];
+      const q=foods.find(x=>x.name===f.query); const unit=(q&&q.unit)||(f.servingLabel?portionOf(f.servingLabel)||"serving":null);
+      let target=id, base=state.foods[id];
+      if(q&&q.foodId){ target=q.foodId; base=state.foods[q.foodId]; }
+      if(base){
+        const merged={...base, aliases:[...new Set([...(base.aliases||[]),...doc.aliases])], servings:{...servingsOf(base)}};
+        if(unit&&doc.servingG) merged.servings[unit]=doc.servingG;
+        delete merged.servingG; delete merged.servingLabel;
+        state.foods[target]=merged;
+        if(state.db){ try{ await state.db.collection("foods").doc(target).set(merged); }catch(e){} }
+        continue;
+      }
+      if(unit&&doc.servingG){ doc.servings={[unit]:doc.servingG}; } delete doc.servingG; delete doc.servingLabel;
       state.foods[id]=doc;
       if(state.db){ try{ await state.db.collection("foods").doc(id).set(doc); }catch(e){} }
     }
@@ -325,7 +344,18 @@ Return JSON only: {"foods":[{"query":"...","name":"short food name","state":"coo
   }
 }
 
-function parseAll(){ return $("input").value.split(/[\n,;]+/).map(parsePiece).filter(Boolean); }
+function parseAll(){
+  const out=[];
+  for(const line of $("input").value.split(/\n+/)){
+    const parts=line.split(/[,;]+/).map(x=>x.trim()).filter(Boolean); const merged=[];
+    // a piece with no number is part of a longer food name ("Light + Fit Greek yogurt, strawberry cheesecake 150g")
+    let buf=[];
+    for(const part of parts){ if(!/\d/.test(part)&&!/\bwater\b/i.test(part)){ buf.push(part); continue; } merged.push([...buf,part].join(", ")); buf=[]; }
+    if(buf.length){ if(merged.length) merged[merged.length-1]+=", "+buf.join(", "); else merged.push(buf.join(", ")); }
+    out.push(...merged);
+  }
+  return out.map(parsePiece).filter(Boolean);
+}
 let liveTimer=0;
 function livePreview(){ clearTimeout(liveTimer); liveTimer=setTimeout(()=>{ const items=parseAll().map(resolve); state.pending=items; renderPreview(items); },250); }
 
