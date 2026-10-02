@@ -71,3 +71,5 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Light + Fit Greek yogurt, strawberry cheesecake | | 53 | 8 | label: 5.3 oz (150 g) cup = 80 kcal, 12 g protein |
 | Fettuccine Alfredo with chicken and mushroom | cooked | 220 | 14 | est (Claude) |
 | Garden salad with croutons and blue cheese dressing | | 145 | 5 | est (Claude), 1 bowl ≈ 200 g |
+| Paksiw na pata (pork hock), meat with skin | cooked | 250 | 20 | est |
+| Saba banana | cooked | 120 | 1 | est |
