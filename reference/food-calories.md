@@ -73,3 +73,8 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Garden salad with croutons and blue cheese dressing | | 145 | 5 | est (Claude), 1 bowl ≈ 200 g |
 | Paksiw na pata (pork hock), meat with skin | cooked | 250 | 20 | est |
 | Saba banana | cooked | 120 | 1 | est |
+| Pompano | grilled | 211 | 24 | USDA |
+| Jollibee Chickenjoy | 1 piece | 320 per piece | 25 per piece | est |
+| Jollibee Jolly Spaghetti | regular | 560 per serving | 20 per serving | est |
+| Jollibee ube pie | 1 pie | 250 per pie | 3 per pie | est |
+| Coconut water | | 19 | 0.2 | |
