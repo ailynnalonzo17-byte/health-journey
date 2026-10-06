@@ -78,3 +78,4 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Jollibee Jolly Spaghetti | regular | 560 per serving | 20 per serving | est |
 | Jollibee ube pie | 1 pie | 250 per pie | 3 per pie | est |
 | Coconut water | | 19 | 0.2 | |
+| McDonald's Big Breakfast (sausage, eggs, biscuit, hash brown) | meal | 760 per meal | 28 per meal | label; 620 without hash brown |
