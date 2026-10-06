@@ -12,7 +12,7 @@ Fill in once. Vera uses it to work out your daily target.
 | Units (kg or lb) | lb, oz for water |
 | Usual activity outside exercise (desk / on feet / physical job) | Desk job (factor 1.2) |
 | Water goal | 64 oz (default, not yet confirmed by owner) |
-| Timezone | _not recorded_ |
+| Timezone | Pacific (America/Los_Angeles), Salinas CA |
 
 ## Targets (Vera calculates)
 
