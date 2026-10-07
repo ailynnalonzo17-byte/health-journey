@@ -81,3 +81,5 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | McDonald's Big Breakfast (sausage, eggs, biscuit, hash brown) | meal | 760 per meal | 28 per meal | label; 620 without hash brown |
 | Skinless longganisa (pork) | cooked | 330 | 13 | est; ~30 g / ~100 kcal per piece |
 | Banana bread | slice | 180 per slice | 3 per slice | her label |
+| Parmesan cheese, grated | | 420 | 38 | USDA |
+| Basil pesto | | 530 | 5 | est; 1 tbsp ~15 g ~80 kcal |
