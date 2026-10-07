@@ -79,3 +79,5 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Jollibee ube pie | 1 pie | 250 per pie | 3 per pie | est |
 | Coconut water | | 19 | 0.2 | |
 | McDonald's Big Breakfast (sausage, eggs, biscuit, hash brown) | meal | 760 per meal | 28 per meal | label; 620 without hash brown |
+| Skinless longganisa (pork) | cooked | 330 | 13 | est; ~30 g / ~100 kcal per piece |
+| Banana bread | slice | 180 per slice | 3 per slice | her label |
