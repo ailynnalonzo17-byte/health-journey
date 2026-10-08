@@ -15,3 +15,4 @@ Daily food, water, activity and weight log, kept by Vera.
 | `plans/doctor-questions-2026-10.md` | Questions for the doctor about Oct labs |
 | `plans/meal-ideas.md` | Meal ideas that fit the limit and the labs |
 | `plans/meal-plan-week-1.md` | 1-week meal plan and grocery list |
+| `plans/recipes.md` | Recipes for the 1-week meal plan |

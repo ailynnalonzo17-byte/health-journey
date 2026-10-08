@@ -1,7 +1,7 @@
 # 1-week meal plan (week of 9 Oct 2026)
 
 Targets: under 1,799 kcal, about 137 g protein. Built for the Oct labs: lean protein and fish, vegetables, 1 cup rice max, little fatty pork, one planned treat.
-Swap any day for another. Weigh rice cooked (1 cup ≈ 195 g).
+Swap any day for another. Weigh rice cooked (1 cup ≈ 195 g). Recipes: `plans/recipes.md`.
 
 | Day | Breakfast | Lunch | Dinner | Snacks | kcal | Protein |
 |---|---|---|---|---|---|---|
