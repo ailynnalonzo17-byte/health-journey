@@ -33,6 +33,8 @@ Each recipe is 1 serving unless noted. Calories are for the recipe as written. U
 
 Mix the yogurt, berries and oats. Eat the eggs on the side.
 
+No need to cook the oats: rolled oats are steamed at the factory and safe to eat raw. For softer oats, let the bowl sit 10 minutes, or mix it the night before and keep it in the fridge (overnight oats). For warm oats, microwave them with a splash of water for 30 seconds first. Same calories either way.
+
 ---
 
 ## Fish
