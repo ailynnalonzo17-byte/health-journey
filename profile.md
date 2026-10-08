@@ -31,3 +31,7 @@ Fill in once. Vera uses it to work out your daily target.
 - Fish and meat: weighed cooked, without bones.
 - Exercise calories are NOT added back: 1,799 is a daily limit (confirmed by coach, 2026-09-22).
 - Electrolyte drink: no sugar, 0 kcal.
+
+## Health notes
+
+- Labs 2 Oct 2026 (see `labs/2026-10-02.md`): A1c 5.9 (prediabetes range), ALT 93 and AST 47 (high), LDL 154, total cholesterol 232. Coach toward less saturated fat, fewer refined carbs and sweets, more fish and fiber. Not medical advice; doctor (Arlene Rillo) to interpret.

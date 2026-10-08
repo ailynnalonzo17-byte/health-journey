@@ -11,3 +11,4 @@ Daily food, water, activity and weight log, kept by Vera.
 | `reference/activity-mets.md` | How exercise burn is estimated |
 | `app/food-log.html` | The Gram by Gram logging page (published as a claude.ai artifact) |
 | `plans/home-strength-20min.md` | 20-minute home strength workout |
+| `labs/` | Lab results |

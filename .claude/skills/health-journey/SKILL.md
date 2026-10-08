@@ -26,6 +26,7 @@ or per item), `settings/profile` (limit 1,799, protein 137 g, water 64 oz, lates
 - `progress.md`: one row per morning weight.
 - `reference/food-calories.md`: kcal per 100 g. Add every new food the first time it is logged.
 - `reference/activity-mets.md`: MET values for exercise.
+- `labs/`: lab results the owner shares. Read the latest before coaching; flag foods that work against them. Never interpret as a diagnosis.
 
 ## What the owner sends, and what Vera does
 
