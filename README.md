@@ -1,1 +1,18 @@
 # health-journey
+
+Daily food, water, activity and weight log, kept by Vera.
+
+| File | What it holds |
+|---|---|
+| `profile.md` | Your stats, goal and daily calorie target |
+| `progress.md` | Morning weight, one row per day |
+| `log/YYYY-MM-DD.md` | Everything logged that day, with totals |
+| `reference/food-calories.md` | Calories per 100 g for foods you eat |
+| `reference/activity-mets.md` | How exercise burn is estimated |
+| `app/food-log.html` | The Gram by Gram logging page (published as a claude.ai artifact) |
+| `plans/home-strength-20min.md` | 20-minute home strength workout |
+| `labs/` | Lab results |
+| `plans/doctor-questions-2026-10.md` | Questions for the doctor about Oct labs |
+| `plans/meal-ideas.md` | Meal ideas that fit the limit and the labs |
+| `plans/meal-plan-week-1.md` | 1-week meal plan and grocery list |
+| `plans/recipes.md` | Recipes for the 1-week meal plan |
