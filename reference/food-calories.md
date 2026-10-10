@@ -75,6 +75,8 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Saba banana | cooked | 120 | 1 | est |
 | Purple (red) cabbage | raw | 31 | 1.4 | est |
 | Rocky road ice cream | | 250 | 4 | est |
+| T-bone steak, lean and fat | grilled | 250 | 24 | est |
+| Asparagus | cooked | 22 | 2.4 | |
 | Pompano | grilled | 211 | 24 | USDA |
 | Jollibee Chickenjoy | 1 piece | 320 per piece | 25 per piece | est |
 | Jollibee Jolly Spaghetti | regular | 560 per serving | 20 per serving | est |
