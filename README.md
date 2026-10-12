@@ -12,6 +12,7 @@ Daily food, water, activity and weight log, kept by Vera.
 | `app/food-log.html` | The Gram by Gram logging page (published as a claude.ai artifact) |
 | `plans/home-strength-20min.md` | 20-minute home strength workout |
 | `labs/` | Lab results |
+| `labs/trends.md` | Lab results compared over time |
 | `plans/doctor-questions-2026-10.md` | Questions for the doctor about Oct labs |
 | `plans/meal-ideas.md` | Meal ideas that fit the limit and the labs |
 | `plans/meal-plan-week-1.md` | 1-week meal plan and grocery list |
