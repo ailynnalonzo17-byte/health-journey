@@ -78,6 +78,7 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | T-bone steak, lean and fat | grilled | 250 | 24 | est |
 | Asparagus | cooked | 22 | 2.4 | |
 | Beef tapa | cooked | 250 | 22 | est (Claude) |
+| Green beans | cooked | 35 | 1.9 | |
 | Asparagus | raw | 20 | 2.2 | |
 | Pompano | grilled | 211 | 24 | USDA |
 | Jollibee Chickenjoy | 1 piece | 320 per piece | 25 per piece | est |
