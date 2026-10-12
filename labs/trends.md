@@ -25,8 +25,11 @@ Not medical advice; the doctor interprets. Ranges differ a little between labs, 
 | Urine microalbumin/creatinine | 60 H | not tested | Recheck | < 30 |
 | Vitamin D (ng/mL) | 34 | not tested | Low end of normal | 30 to 100 |
 | TSH | 1.49 | not tested | Normal | |
-| Hemoglobin (g/dL) | not shown | 13.7 | Normal | |
-| MCH (pg) | not shown | 27.2 | Low end of normal | |
+| WBC | 4.7 | 4.7 | Same, normal | |
+| Hemoglobin (g/dL) | 13.0 | 13.7 | Better, normal | |
+| Hematocrit (%) | 39.8 | 42.5 | Better, normal | |
+| MCV (fL) | 82 | 84.3 | Slightly better (small red cells fit low iron) | |
+| MCH (pg) | 26.7 | 27.2 | Slightly better, low end | |
 
 ## Still to follow up
 - Liver enzymes still high: ask about cause (fatty liver?), ultrasound, hepatitis tests, recheck date.
