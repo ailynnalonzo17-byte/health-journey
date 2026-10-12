@@ -31,6 +31,15 @@ Not medical advice; the doctor interprets. Ranges differ a little between labs, 
 | MCV (fL) | 82 | 84.3 | Slightly better (small red cells fit low iron) | |
 | MCH (pg) | 26.7 | 27.2 | Slightly better, low end | |
 
+## Comparing two labs
+- July and October were done at different labs. Units match (mg/dL, U/L, %), so the numbers line up.
+- A1c, glucose and cholesterol tests are standardized, so they compare well between labs.
+- Liver enzymes (ALT, AST) vary more by lab method; each lab sets its own range. Compared as a multiple of each lab's upper limit:
+  - ALT: July 225 / 49 = 4.6x the upper limit; Oct 93 / 29 = 3.2x. Better.
+  - AST: July 123 / 35 = 3.5x; Oct 47 / 35 = 1.3x. Much better.
+- Glucose depends on fasting: check whether July's 134 was fasting.
+- For the cleanest comparison, use the same lab for future rechecks.
+
 ## Still to follow up
 - Liver enzymes still high: ask about cause (fatty liver?), ultrasound, hepatitis tests, recheck date.
 - Iron and transferrin saturation were low in July and not rechecked in October.
