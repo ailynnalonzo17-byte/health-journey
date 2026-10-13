@@ -17,7 +17,7 @@
 10. Can you check my 10-year heart risk score?
 
 ## Other
-11. My total blood protein was 8.7 (high). What does that mean, and does it need follow-up?
+11. My total blood protein was 8.7 (high) in both July and October, with globulin at the top of normal. What does that mean? Should I have a serum protein electrophoresis (SPEP) or other follow-up?
 12. My coach set my calories at 1,799 a day and protein at 137 g. Is that okay for my liver and kidneys?
 13. What weight-loss goal would make the biggest difference for these results?
 
