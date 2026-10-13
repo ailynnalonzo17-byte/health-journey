@@ -38,3 +38,4 @@ Fill in once. Vera uses it to work out your daily target.
 - Labs 9 Jul 2026 (see `labs/2026-07-09.md`) were worse: A1c 6.2, glucose 134, ALT 225, AST 123, LDL 165, low iron (30) and transferrin saturation (8%), urine microalbumin 60 (high). Oct labs improved on A1c, glucose, liver, cholesterol. Trend table: `labs/trends.md`.
 - Mammogram 24 Jun 2026: BI-RADS 0, left breast calcifications, callback for more views and ultrasound; high lifetime risk (23.5%); yearly mammogram plus breast MRI, MRI due about Dec 2026. Pap Mar 2026 normal, next 2031.
 - Low iron in July: include iron-rich foods (lean beef in moderation, fish, beans, lentils, spinach, malunggay) with vitamin C; avoid tea or coffee with iron-rich meals.
+- Supplements: Qualia Mind nootropic (6 capsules/day, multi-herb; started date unknown). Flagged for the doctor as a possible liver factor.

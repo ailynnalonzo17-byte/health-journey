@@ -30,3 +30,6 @@
 17. My mammogram was BI-RADS 0 with calcifications in the left breast. Has the callback (magnification views and ultrasound) been done, and what did it show?
 18. I'm high lifetime risk (23.5%). Is the breast MRI scheduled for about December? Should I see a high-risk breast clinic or genetic counselor?
 
+## Supplements
+19. I take Qualia Mind (6 capsules a day; many herbal extracts including ginkgo, rhodiola, Celastrus, Polygala, Oroxylum, Terminalia/Boswellia, saffron, lion's mane, plus B vitamins and 100 mg caffeine). Could it be raising my ALT/AST? Should I stop it before my liver recheck? (Bring the bottle.)
+
