@@ -79,6 +79,7 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Asparagus | cooked | 22 | 2.4 | |
 | Beef tapa | cooked | 250 | 22 | est (Claude) |
 | Green beans | cooked | 35 | 1.9 | |
+| Coconut shrimp, breaded | fried or air-fried | 270 | 10 | est; 1 large piece ≈ 25 g |
 | Asparagus | raw | 20 | 2.2 | |
 | Pompano | grilled | 211 | 24 | USDA |
 | Jollibee Chickenjoy | 1 piece | 320 per piece | 25 per piece | est |
