@@ -81,6 +81,10 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Green beans | cooked | 35 | 1.9 | |
 | Coconut shrimp, breaded, frozen | air-fried | 270 | 10 | est (frozen, factory pre-fried); 1 large piece ≈ 25 g |
 | Tri-tip steak, lean and fat | grilled | 220 | 26 | est |
+| Chia seeds | dry | 486 | 16.5 | |
+| Chowking asado siopao | each | 310 per bun | 11 per bun | est |
+| McDonald's Quarter Pounder with Cheese | each | 520 | 30 | McDonald's US menu |
+| McDonald's fries, large | each | 480 | 7 | McDonald's US menu |
 | Asparagus | raw | 20 | 2.2 | |
 | Pompano | grilled | 211 | 24 | USDA |
 | Jollibee Chickenjoy | 1 piece | 320 per piece | 25 per piece | est |
