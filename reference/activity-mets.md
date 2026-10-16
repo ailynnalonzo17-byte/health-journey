@@ -28,3 +28,4 @@
 | Gardening | 3.8 |
 | Steps only (no activity named) | ~0.04 kcal per step per 70 kg, scaled by weight |
 | Kickboxing class, moderate | 7.3 |
+| Battle rope / cordless battle rope, Tabata intervals | 8.0 (HIIT; work 20 s, rest 10 s) |
