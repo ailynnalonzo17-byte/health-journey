@@ -82,7 +82,7 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Coconut shrimp, breaded, frozen | air-fried | 270 | 10 | est (frozen, factory pre-fried); 1 large piece ≈ 25 g |
 | Tri-tip steak, lean and fat | grilled | 220 | 26 | est |
 | Chia seeds | dry | 486 | 16.5 | |
-| Kashi GO Chocolate Crunch cereal | dry | 400 | 23 | est; confirm from label |
+| Kashi GO Chocolate Crunch cereal | dry | 389 | 18.5 | her label: 3/4 cup (54 g) = 210 kcal, 10 g protein, 10 g fiber |
 | Chowking asado siopao | each | 310 per bun | 11 per bun | est |
 | McDonald's Quarter Pounder with Cheese | each | 520 | 30 | McDonald's US menu |
 | McDonald's fries, large | each | 480 | 7 | McDonald's US menu |
