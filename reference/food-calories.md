@@ -98,3 +98,6 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Banana bread | slice | 180 per slice | 3 per slice | her label |
 | Parmesan cheese, grated | | 420 | 38 | USDA |
 | Basil pesto | | 530 | 5 | est; 1 tbsp ~15 g ~80 kcal |
+| Cheesecake Factory Fettuccini Alfredo, full order | restaurant | 1,770 per order | 40 per order | est |
+| Lechon kawali | fried pork belly | ~500 | 12 | est; 1 piece ≈ 28 g |
+| Porto's dulce de leche cake | 1 slice | 450 per slice | 7 per slice | est |
