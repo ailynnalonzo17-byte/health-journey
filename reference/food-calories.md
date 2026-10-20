@@ -101,3 +101,4 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Cheesecake Factory Fettuccini Alfredo, full order | restaurant | 1,770 per order | 40 per order | est |
 | Lechon kawali | fried pork belly | ~500 | 12 | est; 1 piece ≈ 28 g |
 | Porto's dulce de leche cake | 1 slice | 450 per slice | 7 per slice | est |
+| Fairlife Core Power chocolate, 14 oz bottle | each | 170 per bottle | 26 per bottle | her label; 8 g carbs, 5 g sugar, 3 g sat fat |
