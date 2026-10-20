@@ -33,3 +33,6 @@
 ## Supplements
 19. I take Qualia Mind (6 capsules a day; many herbal extracts including ginkgo, rhodiola, Celastrus, Polygala, Oroxylum, Terminalia/Boswellia, saffron, lion's mane, plus B vitamins and 100 mg caffeine). Could it be raising my ALT/AST? Should I stop it before my liver recheck? (Bring the bottle.)
 20. I'm thinking about berberine (Rootation gummies: 500 mg berberine, milk thistle 100 mg, Ceylon cinnamon, apple cider vinegar, inulin, black pepper extract) for my A1c and liver. Is it safe with my liver numbers and any medicines I take? Should I wait until after my liver recheck?
+
+## Skin
+21. I have darkening on the back of my neck (nape). Could this be acanthosis nigricans from insulin resistance? Does it change anything about my A1c plan?
