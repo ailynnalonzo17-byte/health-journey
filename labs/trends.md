@@ -46,3 +46,12 @@ Not medical advice; the doctor interprets. Ranges differ a little between labs, 
 - Urine microalbumin was high in July and not rechecked.
 - Total protein high on both tests.
 - Mammogram callback for the left breast (from Jun 24): confirm it was done. Breast MRI due about Dec 2026.
+
+## Care Access lipid panel (date to confirm, shared 21 Oct 2026)
+| Test | 9 Jul | 2 Oct | Care Access | Direction |
+|---|---|---|---|---|
+| Total cholesterol | 248 | 232 | 220 | Better each time |
+| LDL | 165 | 154 | 151 | Better each time |
+| HDL | 56 | 56 | 50 | Slightly lower (still normal) |
+| VLDL | — | — | 19 | Normal |
+| Lp(a) | — | — | 9.3 nmol/L | Normal (< 75) |
