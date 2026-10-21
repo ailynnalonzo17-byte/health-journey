@@ -57,6 +57,7 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Milkfish (bangus) | cooked | 190 | 26 | |
 | Milkfish (bangus) | raw | 148 | 20.5 | |
 | Broccoli | cooked | 35 | 2.4 | |
+| Tilapia | cooked | 128 | 26 | |
 | Bok choy | cooked | 12 | 1.6 | |
 | Coconut milk beverage, unsweetened (carton) | | 19 | 0.2 | est |
 | Coconut milk, canned | | 230 | 2.3 | |
