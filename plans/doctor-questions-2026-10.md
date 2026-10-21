@@ -37,6 +37,6 @@
 ## Skin
 21. I have darkening on the back of my neck (nape). Could this be acanthosis nigricans from insulin resistance? Does it change anything about my A1c plan?
 
-## Care Access results (date to confirm)
+## Labcorp results, 1 Oct 2026 (Care Access, Dr. S. Green)
 22. My hsCRP was 5.37 (high). Is this from my weight and liver, or should we look for another cause? Should it be repeated?
-23. ALT 100 and AST 53 have not come down further since October. Is it time for a liver ultrasound or FibroScan and hepatitis tests?
+23. ALT is still about 3x normal on both labs (1 and 2 Oct). Should I have a liver ultrasound or FibroScan and hepatitis tests, and when should we recheck?

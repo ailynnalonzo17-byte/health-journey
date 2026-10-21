@@ -47,20 +47,24 @@ Not medical advice; the doctor interprets. Ranges differ a little between labs, 
 - Total protein high on both tests.
 - Mammogram callback for the left breast (from Jun 24): confirm it was done. Breast MRI due about Dec 2026.
 
-## Care Access lipid panel (date to confirm, shared 21 Oct 2026)
-| Test | 9 Jul | 2 Oct | Care Access | Direction |
+## 1 Oct 2026 Labcorp panel (same week as 2 Oct Quest; second opinion on the same point in time)
+| Test | 9 Jul | 1 Oct Labcorp | 2 Oct Quest | Note |
 |---|---|---|---|---|
-| Total cholesterol | 248 | 232 | 220 | Better each time |
-| LDL | 165 | 154 | 151 | Better each time |
-| HDL | 56 | 56 | 50 | Slightly lower (still normal) |
-| VLDL | — | — | 19 | Normal |
-| Lp(a) | — | — | 9.3 nmol/L | Normal (< 75) |
-| Triglycerides | 134 | 105 | 107 | Normal, steady |
-| Total protein | 8.7 H | 8.7 H | 8.3 | Now normal |
-| Albumin | 4.9 | 5.1 | 4.8 | Normal |
-| Bilirubin, total | 0.5 | 0.8 | 0.6 | Normal |
-| Alkaline phosphatase | 85 | 62 | 72 | Normal |
-| A1c (%) | 6.2 | 5.9 | 5.7 | Better each time |
-| ALT (x upper limit) | 225 (4.6x) | 93 (3.2x) | 100 (3.1x) | Flat since Oct |
-| AST (x upper limit) | 123 (3.5x) | 47 (1.3x) | 53 (1.3x) | Flat since Oct |
-| hsCRP (mg/L) | — | — | 5.37 H | New; ask doctor |
+| A1c (%) | 6.2 | 5.7 | 5.9 | Labs differ by 0.2; both prediabetes range, both better than July |
+| ALT | 225 | 100 (0-32) | 93 (6-29) | Agree: about 3x upper limit |
+| AST | 123 | 53 (0-40) | 47 (10-35) | Agree: about 1.3x upper limit |
+| Total cholesterol | 248 | 220 | 232 | |
+| LDL | 165 | 151 | 154 | |
+| HDL | 56 | 50 | 56 | |
+| Triglycerides | 134 | 107 | 105 | |
+| VLDL | — | 19 | — | Normal |
+| Lp(a) | — | 9.3 nmol/L | — | Normal (< 75), low inherited risk |
+| hsCRP (mg/L) | — | 5.37 H | — | Inflammation; recheck with doctor |
+| Total protein | 8.7 H | 8.3 | 8.7 H | Labcorp range 6.0-8.5, so normal there |
+| Albumin | 4.9 | 4.8 | 5.1 | |
+| Bilirubin, total | 0.5 | 0.6 | 0.8 | |
+| Alkaline phosphatase | 85 | 72 | 62 | |
+| Creatinine | 0.67 | 0.62 | 0.57 | |
+| eGFR | 106 | 108 | 110 | |
+
+Next recheck will show the real trend since the diet started (22 Sep).
