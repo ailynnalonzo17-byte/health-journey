@@ -59,3 +59,8 @@ Not medical advice; the doctor interprets. Ranges differ a little between labs, 
 | Total protein | 8.7 H | 8.7 H | 8.3 | Now normal |
 | Albumin | 4.9 | 5.1 | 4.8 | Normal |
 | Bilirubin, total | 0.5 | 0.8 | 0.6 | Normal |
+| Alkaline phosphatase | 85 | 62 | 72 | Normal |
+| A1c (%) | 6.2 | 5.9 | 5.7 | Better each time |
+| ALT (x upper limit) | 225 (4.6x) | 93 (3.2x) | 100 (3.1x) | Flat since Oct |
+| AST (x upper limit) | 123 (3.5x) | 47 (1.3x) | 53 (1.3x) | Flat since Oct |
+| hsCRP (mg/L) | — | — | 5.37 H | New; ask doctor |

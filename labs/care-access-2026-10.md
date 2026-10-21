@@ -12,5 +12,10 @@
 | Albumin | 4.8 g/dL | 3.8 to 4.9 | Normal |
 | Bilirubin, total | 0.6 mg/dL | 0.0 to 1.2 | Normal |
 | Bilirubin, direct | 0.22 mg/dL | 0.00 to 0.40 | Normal |
+| Alkaline phosphatase | 72 IU/L | 49 to 135 | Normal |
+| AST | 53 IU/L | 0 to 40 | High (1.3x upper limit) |
+| ALT | 100 IU/L | 0 to 32 | High (3.1x upper limit) |
+| Hemoglobin A1c | 5.7 % | 4.8 to 5.6 | High (bottom of prediabetes range) |
+| hsCRP | 5.37 mg/L | 0.00 to 3.00 | High (inflammation) |
 
 Date to confirm with Ailynn.
