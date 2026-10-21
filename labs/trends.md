@@ -55,3 +55,7 @@ Not medical advice; the doctor interprets. Ranges differ a little between labs, 
 | HDL | 56 | 56 | 50 | Slightly lower (still normal) |
 | VLDL | — | — | 19 | Normal |
 | Lp(a) | — | — | 9.3 nmol/L | Normal (< 75) |
+| Triglycerides | 134 | 105 | 107 | Normal, steady |
+| Total protein | 8.7 H | 8.7 H | 8.3 | Now normal |
+| Albumin | 4.9 | 5.1 | 4.8 | Normal |
+| Bilirubin, total | 0.5 | 0.8 | 0.6 | Normal |
