@@ -103,3 +103,4 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Lechon kawali | fried pork belly | ~500 | 12 | est; 1 piece ≈ 28 g |
 | Porto's dulce de leche cake | 1 slice | 450 per slice | 7 per slice | est |
 | Fairlife Core Power chocolate, 14 oz bottle | each | 170 per bottle | 26 per bottle | her label; 8 g carbs, 5 g sugar, 3 g sat fat |
+| Wish-Bone red wine vinaigrette | | 188 | 0 | her label: 2 tbsp (32 g) = 60 kcal, 4 g added sugar, 280 mg sodium |
