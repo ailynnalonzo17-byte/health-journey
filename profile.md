@@ -39,4 +39,4 @@ Fill in once. Vera uses it to work out your daily target.
 - Mammogram 24 Jun 2026: BI-RADS 0, left breast calcifications, callback for more views and ultrasound; high lifetime risk (23.5%); yearly mammogram plus breast MRI, MRI due about Dec 2026. Pap Mar 2026 normal, next 2031.
 - Low iron in July: include iron-rich foods (lean beef in moderation, fish, beans, lentils, spinach, malunggay) with vitamin C; avoid tea or coffee with iron-rich meals.
 - Supplements: Qualia Mind nootropic (6 capsules/day, multi-herb; started date unknown). Flagged for the doctor as a possible liver factor.
-- Takes an iron supplement (dose not recorded). Causes dark stool; likely adding to constipation and bloating (Oct 2026). Take apart from dairy, calcium, coffee and tea.
+- Takes iron 65 mg (elemental) every morning. Causes dark stool; likely adding to constipation and bloating (Oct 2026). Take apart from dairy, calcium, coffee and tea.
