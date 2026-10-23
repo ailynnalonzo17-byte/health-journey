@@ -40,3 +40,6 @@
 ## Labcorp results, 1 Oct 2026 (Care Access, Dr. S. Green)
 22. My hsCRP was 5.37 (high). Is this from my weight and liver, or should we look for another cause? Should it be repeated?
 23. ALT is still about 3x normal on both labs (1 and 2 Oct). Should I have a liver ultrasound or FibroScan and hepatitis tests, and when should we recheck?
+
+## Digestion
+24. I've had bloating and hard, dark stools for about a week. I take iron. Could the iron be causing it? Would every-other-day dosing or a different type of iron be easier on my stomach? When should we recheck iron and ferritin?
