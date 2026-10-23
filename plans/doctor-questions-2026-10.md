@@ -42,4 +42,4 @@
 23. ALT is still about 3x normal on both labs (1 and 2 Oct). Should I have a liver ultrasound or FibroScan and hepatitis tests, and when should we recheck?
 
 ## Digestion
-24. I've had bloating and hard, dark stools for about a week. I take iron. Could the iron be causing it? Would every-other-day dosing or a different type of iron be easier on my stomach? When should we recheck iron and ferritin?
+24. I've had bloating and hard, dark stools for about a week. I take iron. Could the iron be causing it? I already take 65 mg every other day; would a different type of iron be easier on my stomach? When should we recheck iron and ferritin?
