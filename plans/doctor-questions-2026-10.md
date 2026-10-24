@@ -43,3 +43,6 @@
 
 ## Digestion
 24. I've had bloating and hard, dark stools for about a week. I take iron. Could the iron be causing it? I already take 65 mg every other day; would a different type of iron be easier on my stomach? When should we recheck iron and ferritin?
+
+## Women's health
+25. My sex drive is low. Could this be perimenopause or menopause, low iron, or a medicine I take? What are my options (vaginal moisturizer, low-dose vaginal estrogen, menopausal hormone therapy, testosterone)? Are any of these safe with my liver numbers and my high breast cancer risk (Tyrer-Cuzick 23.5%)?
