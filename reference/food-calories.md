@@ -43,7 +43,7 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Mango | raw | 60 | 0.8 | |
 | Greek yogurt, nonfat plain | | 59 | 10 | |
 | Milk, whole | | 61 | 3.2 | |
-| Milk, 2% | | 50 | 3.3 | |
+| Milk, 2% (Great Value) | | 52.4 | 3.2 | her label: 1 cup (240 mL) = 130 kcal, 8 g protein |
 | Cheddar cheese | | 403 | 25 | |
 | Mozzarella, part skim | | 254 | 24 | |
 | Butter | | 717 | 0.9 | |
