@@ -107,3 +107,4 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Chobani 20g Protein mango yogurt, 6.7 oz cup | each | 140 per cup | 20 per cup | label; 7 g sugar, no added sugar |
 | Banana cake/bread, homemade | baked | 326 | 4.3 | est (USDA banana bread) |
 | Optimum Nutrition Gold Standard shake, vanilla, 325 mL carton | each | 130 per carton | 24 per carton | her label; 1 g sugar, 500 mg calcium |
+| Wingstop lemon pepper classic wing (bone-in) | each | 115 per wing | 8 per wing | est |
