@@ -109,3 +109,4 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Optimum Nutrition Gold Standard shake, vanilla, 325 mL carton | each | 130 per carton | 24 per carton | her label; 1 g sugar, 500 mg calcium |
 | Wingstop lemon pepper classic wing (bone-in) | each | 115 per wing | 8 per wing | est |
 | Special K Chocolatey Delight cereal | dry | 381 | 7.1 | her label: 1 cup (42 g) = 160 kcal, 3 g protein, 12 g added sugar |
+| Freddy's Brownie Delight custard | regular | 780 per cup | 14 per cup | est (medium ~950) |
