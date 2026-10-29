@@ -45,7 +45,7 @@ Not medical advice; the doctor interprets. Ranges differ a little between labs, 
 - Iron and transferrin saturation were low in July and not rechecked in October.
 - Urine microalbumin was high in July and not rechecked.
 - Total protein high on both tests.
-- Mammogram callback for the left breast (from Jun 24): confirm it was done. Breast MRI due about Dec 2026.
+- Mammogram callback done 23 Oct 2026: BI-RADS 3 probably benign, ultrasound normal. Next left mammogram about late Apr 2027. Ask if breast MRI (about Dec 2026) is still planned.
 
 ## 1 Oct 2026 Labcorp panel (same week as 2 Oct Quest; second opinion on the same point in time)
 | Test | 9 Jul | 1 Oct Labcorp | 2 Oct Quest | Note |

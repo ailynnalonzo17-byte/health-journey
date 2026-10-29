@@ -27,7 +27,7 @@
 16. My liver enzymes went from ALT 225 / AST 123 in July to 93 / 47 in October. Is that the trend you expected?
 
 ## Mammogram (24 Jun 2026)
-17. My mammogram was BI-RADS 0 with calcifications in the left breast. Has the callback (magnification views and ultrasound) been done, and what did it show?
+17. Done 23 Oct 2026: BI-RADS 3 (probably benign), ultrasound normal, 6-month left mammogram (about late Apr 2027). Who orders and schedules the follow-up?
 18. I'm high lifetime risk (23.5%). Is the breast MRI scheduled for about December? Should I see a high-risk breast clinic or genetic counselor?
 
 ## Supplements
