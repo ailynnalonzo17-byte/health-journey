@@ -111,3 +111,4 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Special K Chocolatey Delight cereal | dry | 381 | 7.1 | her label: 1 cup (42 g) = 160 kcal, 3 g protein, 12 g added sugar |
 | Freddy's Brownie Delight custard | regular | 780 per cup | 14 per cup | est (medium ~950) |
 | Ube crinkle cookie with ube halaya filling (bakery, large) | each | 220 per cookie | 3 per cookie | est |
+| Califia unsweetened almondmilk | | 25 | 0.8 | her label: 8 fl oz (240 mL) = 60 kcal, 2 g protein |
