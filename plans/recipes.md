@@ -169,3 +169,24 @@ Mix tuna, mayo, mustard and celery. Spread on the tortilla, add lettuce and toma
 
 ## Treat (Sat)
 70 g rocky road ice cream + ½ banana sliced on top · ~220 kcal. Weigh it, put the tub away.
+
+---
+
+## Extra recipes
+
+### Light creamy spinach and sun-dried tomato pasta with chicken · ~330 kcal · 37 g protein (serves 4)
+Lighter version of a Facebook "anti-inflammatory" recipe (original ~625 kcal and 14 g protein per serving, with 1 cup heavy cream).
+- 4 oz (113 g) dry protein or whole wheat spaghetti (Barilla Protein+ or chickpea pasta)
+- 450 g raw skinless chicken breast (or peeled shrimp), bite-size
+- 1 tbsp olive oil
+- 3 cloves garlic, minced
+- ½ cup sun-dried tomatoes, drained and chopped
+- 4 cups baby spinach
+- ½ cup plain nonfat Greek yogurt + ¼ cup pasta water
+- ¼ cup grated parmesan
+- ½ tsp salt, ¼ tsp black pepper, pinch of red pepper flakes
+
+1. Cook the pasta; save ½ cup of the water, then drain.
+2. Heat the oil, cook the chicken 5 to 6 minutes until done. Add garlic and sun-dried tomatoes for 1 minute.
+3. Add spinach and stir until wilted. Turn off the heat.
+4. Stir in the pasta, then the yogurt mixed with ¼ cup pasta water, and the parmesan. Off the heat so the yogurt does not split. Season.
