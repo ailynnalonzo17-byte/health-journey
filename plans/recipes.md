@@ -190,3 +190,16 @@ Lighter version of a Facebook "anti-inflammatory" recipe (original ~625 kcal and
 2. Heat the oil, cook the chicken 5 to 6 minutes until done. Add garlic and sun-dried tomatoes for 1 minute.
 3. Add spinach and stir until wilted. Turn off the heat.
 4. Stir in the pasta, then the yogurt mixed with ¼ cup pasta water, and the parmesan. Off the heat so the yogurt does not split. Season.
+
+### Lemon garlic tilapia (oven, air fryer or pan) · ~210 kcal · 34 g protein (1 fillet)
+- 1 tilapia fillet, about 170 g raw
+- 1 tsp olive oil
+- 1 clove garlic, minced (or ½ tsp garlic powder)
+- ½ lemon or 2 calamansi, juiced
+- ¼ tsp paprika, salt, pepper
+- Parsley or green onion (optional)
+
+1. Pat the fish dry. Rub with oil, garlic, paprika, salt and pepper.
+2. Cook: oven 400 °F 12 to 15 min, or air fryer 400 °F 8 to 10 min (no flip), or nonstick pan 3 to 4 min per side.
+3. Done when it flakes easily with a fork. Squeeze lemon on top, add herbs.
+4. Serve with steamed broccoli or bok choy (~30 kcal) and ½ cup brown rice (~110 kcal) or none. Plate ~350 kcal.
