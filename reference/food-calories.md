@@ -113,3 +113,4 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Ube crinkle cookie with ube halaya filling (bakery, large) | each | 220 per cookie | 3 per cookie | est |
 | Califia unsweetened almondmilk | | 25 | 0.8 | her label: 8 fl oz (240 mL) = 60 kcal, 2 g protein |
 | Toblerone milk chocolate | 1 piece (100 g bar) ≈ 8.3 g | 525 | 5.4 | est; ~44 kcal per piece |
+| Kroger Maple & Brown Sugar instant oatmeal | 1 packet ≈ 43 g | 160 per packet | 4 per packet | est; confirm label |
