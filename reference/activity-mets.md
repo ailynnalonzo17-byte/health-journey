@@ -31,3 +31,4 @@
 | Battle rope / cordless battle rope, Tabata intervals | 8.0 (HIIT; work 20 s, rest 10 s) |
 | Pickleball, lesson or drills with a coach | 4.5 |
 | Vibration plate, standing or light moves | 2.0 (est; more if doing squats or lunges on it) |
+| Mini trampoline / rebounder, bouncing workout | 4.5 (3.5 if gentle bouncing) |
