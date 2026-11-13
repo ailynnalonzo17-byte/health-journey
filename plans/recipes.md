@@ -203,3 +203,53 @@ Lighter version of a Facebook "anti-inflammatory" recipe (original ~625 kcal and
 2. Cook: oven 400 °F 12 to 15 min, or air fryer 400 °F 8 to 10 min (no flip), or nonstick pan 3 to 4 min per side.
 3. Done when it flakes easily with a fork. Squeeze lemon on top, add herbs.
 4. Serve with steamed broccoli or bok choy (~30 kcal) and ½ cup brown rice (~110 kcal) or none. Plate ~350 kcal.
+
+## Vegetable sides (each makes ~2 servings)
+
+Tips: fill half the plate with vegetables; use 1 tsp oil (1 tbsp = 120 kcal); go light on soy sauce and bagoong (salt).
+
+### Garlic sautéed sitaw or green beans · ~90 kcal per serving
+- 250 g sitaw or green beans, cut
+- 1 tsp oil, 3 cloves garlic, ½ onion
+- 1 tsp low-sodium soy sauce, 2 tbsp water, pepper
+
+1. Sauté garlic and onion in the oil.
+2. Add beans and water, cover, cook 5 to 6 min until bright green and tender.
+3. Season with soy sauce and pepper.
+
+### Air-fryer broccoli or cauliflower · ~80 kcal
+- 300 g broccoli or cauliflower florets
+- 1 tsp olive oil, garlic powder, salt, pepper, lemon
+
+1. Toss florets with oil and seasonings.
+2. Air-fry 400 °F for 8 to 10 min, shake halfway.
+3. Squeeze lemon on top.
+
+### Bok choy with garlic · ~60 kcal
+- 2 to 3 baby bok choy, halved
+- 1 tsp oil, 3 cloves garlic, 1 tsp oyster sauce, 2 tbsp water
+
+1. Brown garlic in the oil.
+2. Add bok choy and water, cover 2 to 3 min.
+3. Stir in oyster sauce.
+
+### Ensaladang pipino at kamatis (cucumber and tomato salad) · ~40 kcal
+- 1 cucumber, 2 tomatoes, ¼ red onion, sliced
+- 2 tbsp vinegar, pinch of salt, pepper (sweetener optional)
+
+1. Mix everything, chill 10 min. Good with fish or grilled meat.
+
+### Ensaladang talong (grilled eggplant salad) · ~70 kcal
+- 2 Asian eggplants
+- 1 tomato, ¼ onion, 2 tbsp vinegar, salt, pepper
+
+1. Grill or air-fry the eggplants until soft (400 °F, about 15 min).
+2. Peel, chop and mix with tomato, onion and vinegar.
+
+### Light pinakbet · ~120 kcal
+- 1 cup squash, 6 okra, 1 eggplant, ½ ampalaya, 1 cup sitaw, 1 tomato, ½ onion, 3 cloves garlic
+- 1 tsp oil, 1 tsp bagoong (keeps salt down), ½ cup water
+
+1. Sauté garlic, onion and tomato; stir in bagoong.
+2. Add squash and water, simmer 5 min.
+3. Add the rest, cover, cook 5 to 7 min. Don't overstir.
