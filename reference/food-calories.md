@@ -115,3 +115,4 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | Toblerone milk chocolate | 1 piece (100 g bar) ≈ 8.3 g | 525 | 5.4 | est; ~44 kcal per piece |
 | Kroger Maple & Brown Sugar instant oatmeal | 1 packet ≈ 43 g | 160 per packet | 4 per packet | est; confirm label |
 | Kodiak protein overnight oats pouch (chocolate, oats + pea/milk protein) | 1 pouch = 70 g | 270 per pouch | 20 per pouch | her label; 7 g fiber, 280 mg sodium; made with 3/4 cup milk |
+| 85C Bakery Milk Chocolate Thick Toast | 1 slice = 46 g | ~140 per slice | ~4 per slice | est; label gives weight only |
