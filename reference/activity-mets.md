@@ -32,3 +32,5 @@
 | Pickleball, lesson or drills with a coach | 4.5 |
 | Vibration plate, standing or light moves | 2.0 (est; more if doing squats or lunges on it) |
 | Mini trampoline / rebounder, bouncing workout | 4.5 (3.5 if gentle bouncing) |
+| Walking pad, 4 mph | 5.0 |
+| Kettlebell around-the-body / halos, light | 4.0 (est) |
