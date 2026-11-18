@@ -34,3 +34,4 @@
 | Mini trampoline / rebounder, bouncing workout | 4.5 (3.5 if gentle bouncing) |
 | Walking pad, 4 mph | 5.0 |
 | Kettlebell around-the-body / halos, light | 4.0 (est) |
+| Kettlebell swings (squat or hinge style) | 8.0 |
