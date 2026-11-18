@@ -20,7 +20,7 @@ Belly fat cannot be spot-burned; it comes off with overall fat loss. Cardio + st
 
 ## Her kettlebell / dumbbell moves (6 kg kettlebell, 2 lb dumbbells)
 - Kettlebell around the waist: 100 passes
-- Kettlebell leg raises: 50 each side
+- Standing leg raise with kettlebell hold: 50 each leg
 - Squats with 2 lb dumbbells: 50
 
 ## Habits
