@@ -118,3 +118,4 @@ Standard nutrition values (USDA style). `est` = typical value, varies by brand o
 | 85C Bakery Milk Chocolate Thick Toast | 1 slice = 46 g | ~140 per slice | ~4 per slice | est; label gives weight only |
 | Freddy's Brownie Delight custard | small / mini | ~520 | ~9 | est |
 | Freddy's patty melt | 1 sandwich | ~600 | ~28 | est |
+| Tonkotsu ramen, restaurant bowl | 1 bowl | ~900–1,100 | ~40 | est; less if broth left |
